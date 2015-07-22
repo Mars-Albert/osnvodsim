@@ -6,7 +6,7 @@ you shold specify the configuration xmls to run:
 
 a sample xml like this:
 ----------------------------------------------------------------------------
-<?xml version="1.0" encoding="UTF-8"?>
+
 <configuration>
 	<system>
 		<exec_cycles>2</exec_cycles>
