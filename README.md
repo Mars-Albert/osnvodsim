@@ -6,12 +6,11 @@ you shold specify the configuration xmls to run:
 
 a sample xml like this:
 ----------------------------------------------------------------------------
-
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
 	<system>
-		<exec_cycles>4</exec_cycles>
-		<exec_time>600</exec_time>
+		<exec_cycles>2</exec_cycles>
+		<exec_time>500</exec_time>
 		<seed_type>random</seed_type>
 		<seed>1234567890</seed> 
 		<random_variation>0.2</random_variation>
@@ -44,6 +43,12 @@ a sample xml like this:
             <server>
                 <server_bandwidth>500</server_bandwidth>
             </server>
+            <server>
+                <server_bandwidth>500</server_bandwidth>
+            </server>
+            <server>
+                <server_bandwidth>500</server_bandwidth>
+            </server>
         </server_config>
 		<peer_bandwidth>
 			<bandwidth>
@@ -52,11 +57,11 @@ a sample xml like this:
 				<bw_fraction>0.07</bw_fraction>
 			</bandwidth>
 			<bandwidth>
-				<upload_bandwidth>1</upload_bandwidth>
+				<upload_bandwidth> 1</upload_bandwidth>
 				<download_bandwidth>3</download_bandwidth>
 				<bw_fraction>0.79</bw_fraction>
 			</bandwidth>
-                <bandwidth>
+						<bandwidth>
 				<upload_bandwidth> 0.5</upload_bandwidth>
 				<download_bandwidth>1.5</download_bandwidth>
 				<bw_fraction>0.14</bw_fraction>
@@ -76,7 +81,7 @@ a sample xml like this:
 		<degree>8</degree>
 		<packet_lose>0.1</packet_lose>
 		<packet_time_out>4</packet_time_out>
-		<cache_management_policy>new</cache_management_policy>
+		<cache_management_policy>least</cache_management_policy>
 		<cache_check_cycle>0.5</cache_check_cycle>
 	</distribution>
 	<printing_result>
@@ -87,4 +92,5 @@ a sample xml like this:
 		<statistics>statistics.txt</statistics>
 	</printing_result>
 </configuration>
+
 ----------------------------------------------------------------------------
